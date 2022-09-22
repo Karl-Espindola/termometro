@@ -8,22 +8,10 @@ function convertir(){
     
     cen=(faren-32)*(5/9);
     cen=cen.toFixed(1);
-    padre.textContent=cen+"°";
+    padre.textContent=cen+"°C";
     
-    let ele=document.createElement("p");
-    ele.id="graTer"
-    
-    
-    
-        let g=document.createTextNode(cen+"°C");
-        ele.appendChild(g);
-        termometro.appendChild(ele);
-    
+   ter.textContent=cen+"°C";
    
-    
-
- 
-
     let alto=termometro.clientHeight;
     
     let gra=cen*(alto/100);
@@ -31,8 +19,21 @@ function convertir(){
 
 }
 
+function reset(){
+    let faren=document.getElementById("tempF").value="";
+    ter.style.height=0+"px";
+    ter.textContent="";
+    padre.innerText="";
+    
+
+}
+
 let ter=document.getElementById("ter");
 let termometro=document.getElementById("termometro");
 let padre=document.getElementById("padre-p");
-let btn=document.getElementById("btn");
-btn.addEventListener("click",convertir)
+
+let btnConv=document.getElementById("btn");
+btnConv.addEventListener("click",convertir);
+
+let btnReset=document.getElementById("btnReset");
+btnReset.addEventListener("click",reset)
