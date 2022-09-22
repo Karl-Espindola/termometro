@@ -8,21 +8,13 @@ function convertir(){
     
     cen=(faren-32)*(5/9);
     cen=cen.toFixed(1);
-    padre.textContent=cen+"°";
+    padre.textContent=cen+"°C";
     
-    let ele=document.createElement("p");
-    ele.id="graTer"
-    
-    
-    
-        let g=document.createTextNode(cen+"°C");
-        ele.appendChild(g);
-        termometro.appendChild(ele);
+    ter.textContent=cen+"°C";
     
    
     
 
- 
 
     let alto=termometro.clientHeight;
     
