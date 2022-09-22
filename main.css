@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+.contenedor{
+    width:50%;
+    margin: auto;
+}
+.convertidor{
+    float: left;
+    width: 50%;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contenedorTermo{
+    width: 50%;
+    float:left;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#termometro{
+    border:1px solid black;
+    height: 250px;
+    width: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-weight: bold;
+}
+#ter{
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    min-width: 50px;
+}
+#padre{
+    border:1px solid black;
+    width:100px;
+    height:80px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#graTer{
+    z-index:1000;
+}
+
+input{
+    border:1px solid black;
+    width:100px;
+    height:80px;
+    font-size: 50px;
+    text-align: center;
+}
+.p-btn{
+    display: flex;
+    margin-top:50px;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    margin-top: 30px;
+}
