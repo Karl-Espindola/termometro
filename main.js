@@ -10,7 +10,7 @@ function convertir(){
     cen=cen.toFixed(1);
     padre.textContent=cen+"°C";
     
-   ter.textContent=cen+"°C";
+   temp.textContent=cen+"°C";
    
     let alto=termometro.clientHeight;
     
@@ -22,13 +22,14 @@ function convertir(){
 function reset(){
     let faren=document.getElementById("tempF").value="";
     ter.style.height=0+"px";
-    ter.textContent="";
+    temp.textContent="";
     padre.innerText="";
     
 
 }
 
 let ter=document.getElementById("ter");
+let temp=document.getElementById("temp");
 let termometro=document.getElementById("termometro");
 let padre=document.getElementById("padre-p");
 

@@ -3,7 +3,9 @@
 }
 .contenedor{
     width:50%;
+    height:470px;
     margin: auto;
+    border: 1px solid black;
 }
 .convertidor{
     float: left;
@@ -32,7 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: blue;
+    color: black;
     font-weight: bold;
 }
 #ter{
@@ -51,10 +53,14 @@
     align-items: center;
 
 }
-#graTer{
-    z-index:1000;
-}
 
+#temp{
+    position: absolute;
+    top:40%;
+    margin: auto;
+    z-index:1000;
+
+}
 input{
     border:1px solid black;
     width:100px;
@@ -71,4 +77,11 @@ input{
 }
 button{
     margin-top: 30px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+h1{
+    text-align: center;
 }
