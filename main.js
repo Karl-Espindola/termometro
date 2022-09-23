@@ -5,18 +5,22 @@ let cen=0;
 function convertir(){
     
     let faren=parseFloat(document.getElementById("tempF").value);
+    let alto=termometro.clientHeight;
     
+
     cen=(faren-32)*(5/9);
     cen=cen.toFixed(1);
     padre.textContent=cen+"°C";
-    
-   temp.textContent=cen+"°C";
-   
-    let alto=termometro.clientHeight;
-    
+    temp.textContent=cen+"°C";
     let gra=cen*(alto/100);
-    ter.style.height=gra+"px";
 
+    if(gra>=alto){
+        ter.style.height=alto+"px";
+    }
+    else{
+        ter.style.height=gra+"px"; 
+    }
+    
 }
 
 function reset(){
