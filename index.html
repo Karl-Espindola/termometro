@@ -5,10 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <title>Termometro</title>
 </head>
 <body>
-    
+    <section class="contenedor">
+        <div>
+            <h1>CONVERTIDOR DE TEMPERATURA</h1>
+            <div class="convertidor">
+                <p>Temperatura en Farenheit</p>
+                <input type="text" name="" id="tempF">
+                <div class="p-btn">
+                    <div id="padre"><p id="padre-p"></p></div>
+                    <button id="btn">Convertir</button>
+                    <button id="btnReset">Reset</button>
+                </div>
+            </div>
+        </div>
+        <div class="contenedorTermo">
+            <p>100°C</p>
+            <div id="termometro">
+                <p id="temp"></p>
+                <div id="ter"></div>
+            </div>
+            <p>0°C</p>
+        </div>
+    </section>
     <script src="main.js"></script>
 </body>
 </html>
